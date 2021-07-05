@@ -1,2 +1,2 @@
-# yportfolio
-A portfolio template website
+# cportfolio
+A career portfolio website template
