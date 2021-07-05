@@ -99,5 +99,5 @@ The core team looks at Pull Requests on a regular basis. After feedback has been
 
 You can chat with the core team on https://gitter.im/. -->
 
-[cportfolio]: https://github.com/codanv/
-[Code of Conduct]: ./CODE_OF_CONDUCT.md
+[cportfolio](https://github.com/codanv/cportfolio)
+[Code of Conduct](/CODE_OF_CONDUCT.md)
