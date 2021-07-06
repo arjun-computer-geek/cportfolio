@@ -26,7 +26,7 @@ Develop a minimal and resource-light template to power career portfolio websites
 
 - Hello
 
-Introduction & Summery work
+Introduction
 
 - Work
 
@@ -57,7 +57,6 @@ Detailed Introduction
 - Simply clone this repository and open `index.html` file in your preferred browser. 👍
 
 ## Support
-- [Github Discussions](https://github.com/codanv/cportfolio/discussions)
 - [Twitter](https://twitter.com/codanv)
 
 ## Code of Conduct
