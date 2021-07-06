@@ -24,13 +24,20 @@ cportfolio is an open source web application for building career portfolio websi
 
 Develop a minimal and resource-light template to power career portfolio websites. It should have four or more tabbed sections in single page.
 
-- Home
+- Hello
+
 Introduction & Summery work
-- Works
+
+- Work
+
 List of projects or works
+
 - Contact
+
 Get in touch information
+
 - About
+
 Detailed Introduction
 
 ### Technology
