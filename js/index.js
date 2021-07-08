@@ -56,7 +56,7 @@ home.addEventListener("click", (e) => {
   contact.setAttribute("class", `nav-link`);
   about.setAttribute("class", `nav-link`);
 
-  headerTitle.innerText = "Home";
+  headerTitle.innerText = "Hello!";
 });
 
 
