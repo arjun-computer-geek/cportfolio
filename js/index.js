@@ -308,7 +308,7 @@ educationLink.addEventListener("click", e => {
 
     hide(profile)
     hide(skills)
-    hide(education, "block")
+    show(education, "block")
     hide(bucket_list)
 
     profileLink.setAttribute("class", "aside-link")
