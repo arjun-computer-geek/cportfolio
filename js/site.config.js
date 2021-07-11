@@ -135,6 +135,8 @@ const handleClick = (element) => {
         work.setAttribute("class", "nav-link")
         about.setAttribute("class", "nav-link")
         home.setAttribute("class", "nav-link")
+
+        document.getElementById(`${siteData.contact.links[0].hyperlink}-link`).setAttribute("class", "aside-link aside-active")
     }
    else if(element.id == "about"){
         aboutFolder.style.display = "flex";
@@ -150,6 +152,8 @@ const handleClick = (element) => {
         work.setAttribute("class", "nav-link")
         home.setAttribute("class", "nav-link")
         contact.setAttribute("class", "nav-link")
+
+        document.getElementById(`${siteData.about.links[0].hyperlink}-link`).setAttribute("class", "aside-link aside-active")
     }
 }
 
