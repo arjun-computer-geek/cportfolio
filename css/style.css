@@ -45,9 +45,14 @@ header {
 }
 
 .nav-link:hover {
-    color: darkorchid;
-    background-color: orchid;
+    color: black;
+    background-color: lightgrey;
 }
+
+.nav-link:active {
+    background-color: greenyellow;
+}
+
 
 .nav-active {
     border-bottom: 2px solid black;
@@ -132,3 +137,22 @@ aside {
     max-width: 10vw;
 }
 
+#work-folder, #contact-folder, #about-folder, #aside {
+    display: none;
+}
+
+#work-folder > div:not(:first-child){
+    display: none;
+}
+
+#contact-folder > div:not(:first-child){
+    display: none;
+}
+
+#about-folder > div:not(:first-child){
+    display: none;
+}
+
+#aside a:active {
+    background-color: yellowgreen;
+}
