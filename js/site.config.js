@@ -90,7 +90,7 @@ const handleClick = (element) => {
     const about = document.getElementById("about")
 
    if(element.id == "home") {
-        homeFolder.style.display = "flex";
+        homeFolder.style.display = "block";
 
         // const compiledHtml = template(siteData.home)
         // aside.innerHTML = compiledHtml
