@@ -50,7 +50,7 @@ Detailed Introduction
 
 - [x] 2.0
 
-Reference: [issue #8](#8)
+Reference: [issue](https://github.com/Codanv/cportfolio/issues/8)
 
 - Programmatically generated static website
 - Using Json data to parse into html tags
