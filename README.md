@@ -57,7 +57,7 @@ Reference: [issue](https://github.com/Codanv/cportfolio/issues/8)
 
 ### Technology
 
-  - Handlebar
+  - Handlebars
 
 ## Getting Started
 
