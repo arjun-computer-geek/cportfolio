@@ -22,6 +22,8 @@ cportfolio is an open source web application for building career portfolio websi
 
 ## Project Goal
 
+- [x] 1.0
+
 Develop a minimal and resource-light template to power career portfolio websites. It should have four or more tabbed sections in single page.
 
 - Hello
@@ -40,11 +42,22 @@ Get in touch information
 
 Detailed Introduction
 
-### Technology
+#### Technology
 
 - HTML
 - CSS
 - JavaScript 
+
+- [x] 2.0
+
+Reference: [issue #8](#8)
+
+- Programmatically generated static website
+- Using Json data to parse into html tags
+
+### Technology
+
+  - Handlebar
 
 ## Getting Started
 
@@ -55,9 +68,6 @@ Detailed Introduction
 ### Installation 
 
 - Simply clone this repository and open `index.html` file in your preferred browser. 👍
-
-## Support
-- [Twitter](https://twitter.com/codanv)
 
 ## Code of Conduct
 
