@@ -1,0 +1,168 @@
+{   
+    "profession":"developer",
+    "name": "John Doe",
+    "home": {
+        "headerTitle": "Welcome",
+        "image": "public/images/down.jpg",
+        "philosophy": "A tenacious, passionate digital marketer and maker who loves turning bold ideas into impactful & memorable experiences."
+    },
+    "work": {
+        "headerTitle": "Work",
+        "list": [
+            {   
+                "title": "Xydus Game",
+                "slug": "xydus-game",
+                "description": "Xydus is multi-player game",
+                "thumbnail": "public/images/profile.jpg",
+                "technology": ["Node JS", "MongoDB"],
+                "notes": "Overwhelmed while working",
+                "repository": "https://github.com/codanv/cportfolio.git",
+                "demonstration": "https://codanv.github.io/cportfolio"
+            },
+            {   
+                "title": "Xydus Music",
+                "slug": "xydus-music",
+                "description": "Xydus is online music streaming platform",
+                "thumbnail": "public/images/profile.jpg",
+                "technology": ["Node JS", "MongoDB"],
+                "notes": "Satisfactory.",
+                "repository": "https://github.com/codanv/cportfolio.git",
+                "demonstration": "https://codanv.github.io/cportfolio"
+            },
+            {   
+                "title": "Xydus Poar",
+                "slug": "xydus-poar",
+                "description": "Poar Algo is a crypto currency",
+                "thumbnail": "public/images/profile.jpg",
+                "technology": ["Blockchain"],
+                "notes": "It was tough for me.",
+                "repository": "https://github.com/codanv/cportfolio.git",
+                "demonstration": "https://codanv.github.io/cportfolio"
+            }
+        ]
+    },
+    "contact": {
+        "headerTitle": "Contact",
+        "list": [
+            {   
+                "title": "Appointment",
+                "slug": "appointment",
+                "description": "No offline meetings",
+                "form": {
+                    "nameCaption": "Your Good name",
+                    "purposeCaption": "Purpose of meeting",
+                    "sendCaption": "Request",
+                    "cancelCaption": "Not Now"
+                }                
+            },
+            {   
+                "title": "Email List",
+                "slug": "email-list",
+                "description": "contact if it makes sense or simply necessary",
+                "workEmail": "work@example.com",
+                "generalEmail": "general@example.com"
+            },
+            {   
+                "title": "Social",
+                "slug": "social",
+                "description": "",
+                "links":[
+                    {
+                        "Website": "https://example.com/",
+                        "Facebook": "https://facebook.com/",
+                        "Twitter": "https://facebook.com/",
+                        "LinkedIn":"https://facebook.com/",
+                        "YouTube":"https://facebook.com/",
+                        "Instagram": "https://facebook.com/"
+                    }
+                ]
+            }
+        ]
+    },
+    "about": {
+        "headerTitle": "About",
+        "list": [
+            {   
+                "title": "Profile",
+                "slug": "profile",
+                "thumbnail": "public/images/profile.jpg",
+                "objectives": "Experienced data science engineer relocating to San Francisco in August and seeking employment with a fast-growing startup. I bring more than 5 years experience doing data analysis and more than 7 years experience in database designer.",
+                "website":"https://example.com",
+                "currentRole": "Freelancer",
+                "almaMater": "Delhi University",
+                "languages": "C, Java, JS, Python"
+            },
+            {   
+                "title": "Skill",
+                "slug": "skill",
+                "skillSet": "Debugging, Testing",
+                "website": ""
+            },
+            {   
+                "title": "Experience",
+                "slug": "experience",
+                "description": "",
+                "roles": [
+                    {
+                        "workplace":"HZ inc. Hyderabad, India",
+                        "type": "employee",
+                        "jobTitle": "Full Stack Web Developer",
+                        "year": "4"                     
+                    },
+                    {   
+                        "workplace":"UpWork. Online",
+                        "type": "Freelancer",
+                        "name": "Database Designer",
+                        "year": "7"                      
+                    },
+                    {
+                        "workplace":"SECRET",
+                        "type": "Contract",
+                        "name": "Data Analyst",
+                        "year": "5"                      
+                    }
+                ]
+            },
+            {   
+                "title": "Education",
+                "slug": "education",
+                "description": "",
+                "schoolList": [
+                    {
+                        "school": "Valley High School Maine",
+                        "degree": "grade 12",
+                        "subject": "Economics",
+                        "year":"2010"
+                    },
+                    {
+                        "school": "Delhi University",
+                        "degree": "Graduation",
+                        "subject": "Computer Science",
+                        "year":"2014"
+                    },
+                    {
+                        "school": "University of Alabama | Birmingham",
+                        "degree": "certification",
+                        "subject": "Certification in Grant Writing",
+                        "year":"2015"
+                    }
+                ]
+            },
+            {   
+                "title": "Awards",
+                "slug": "awards",
+                "description": "",
+                "image": "public/images/profile.jpg",
+                "nominations": ["Award Z", "Award ZZ"],
+                "wins":["Award Z"]
+            },
+            {   
+                "title": "Bucket List",
+                "slug": "bucket-list",
+                "description": "Not in specific order",
+                "image": "public/images/profile.jpg",
+                "interests": ["Tracking", "Scuba Driving", "Fly"]
+            }
+        ]
+    }
+}
