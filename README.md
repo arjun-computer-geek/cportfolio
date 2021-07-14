@@ -4,7 +4,7 @@ Welcome to the codebase of cportfolio. it is intended to power career portfolio.
 
 ## What is cportfolio?
 
-cportfolio is an open source web application for building career portfolio websites. portfolios for software developer, writer, leader, just to name a few. 
+cportfolio is a portfolio website generator. It builds static site (SPA) from a single `json` file. Portfolios for software developer, writer, leader, just to name a few.
 
 ## Table of Contents
 
@@ -22,52 +22,32 @@ cportfolio is an open source web application for building career portfolio websi
 
 ## Project Goal
 
-- [x] 1.0
-
-Develop a minimal and resource-light template to power career portfolio websites. It should have four or more tabbed sections in single page.
-
-- Hello
-
-Introduction
-
-- Work
-
-List of projects or works
-
-- Contact
-
-Get in touch information
-
-- About
-
-Detailed Introduction
-
-#### Technology
-
-- HTML
-- CSS
-- JavaScript 
-
-- [x] 2.0
-
-Reference: [issue](https://github.com/Codanv/cportfolio/issues/8)
-
-- Programmatically generated static website
-- Using Json data to parse into html tags
-
-### Technology
-
-  - Handlebars
+  [Right here](PROJECT_GOAL.md)
 
 ## Getting Started
 
 ### Prerequisites
 
 - Web browser 
+- NodeJS
 
 ### Installation 
 
-- Simply clone this repository and open `index.html` file in your preferred browser. 👍
+Clone the cportfolio repository
+
+`git clone https://github.com/Codanv/cportfolio.git`
+
+Install the dependencies (from cportfolio directory)
+
+`npm install`
+
+Fill the data in `config.json` of `data` directory
+
+Build your portfolio site
+
+`npm run build`
+
+Deploy (or test) `build` directory
 
 ## Code of Conduct
 
