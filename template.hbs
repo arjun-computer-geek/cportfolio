@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{this.home.philosophy}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>cportfolio - a website template for career portfolio</title>
+  </head>
+  <body>
+    <!-- lets start our endeavor -->
+    <div class="container">
+      <header>
+        <h1 id="header-title">Hello!</h1>
+        <nav>
+          <a
+            id="home"
+            onclick="handleClick(this)"
+            class="nav-link nav-active"
+            onclick="handleClick(this)"
+            href="#"
+          >Home</a>
+          <a
+            id="work"
+            onclick="handleClick(this)"
+            class="nav-link"
+            href="#"
+          >Work</a>
+          <a
+            id="contact"
+            onclick="handleClick(this)"
+            class="nav-link"
+            href="#"
+          >Contact</a>
+          <a
+            id="about"
+            onclick="handleClick(this)"
+            class="nav-link"
+            href="#"
+          >About</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="content">
+          
+          <!-- home folder -->
+          <div id="home-folder" style="background-image: url({{#if  this.home.image}}{{this.home.image}}{{/if}})">
+            <div class="home-text-wrapper">
+              {{#if this.name}}
+                <h2>I'm {{this.name}}.</h2>
+              {{/if}}
+
+              {{#if this.home.philosophy}}
+                <p>{{this.home.philosophy}}</p>
+              {{/if}}
+            </div>
+          </div>
+
+          <!-- work folder -->
+          <div id="work-folder">
+            {{#each this.work.list}}
+                <div class="work-card" id="{{this.slug}}">
+                    <img src="{{this.thumbnail}}" alt="{{this.title}}" />
+                    <h2>{{this.title}}</h2>
+                    <p>{{this.description}}</p>
+                    <p>{{this.technology}}</p>
+                    <p>{{this.notes}}</p>
+                    {{#if this.repository}}
+                        <p><a href="{{this.repository}}">Repository</a></p>
+                    {{/if}}
+                    {{#if this.demonstration}}
+                        <p><a href="{{this.demonstration}}">Demonstration</a></p>
+                    {{/if}}
+                </div>
+            {{/each}}
+          </div>
+
+          <!-- contact folder -->
+          <div id="contact-folder">
+              {{#each this.contact.list}}
+                <div id="{{this.slug}}" class="contact-card">
+                    <h2>{{this.title}}</h2>
+                    <p>{{this.description}}</p>
+                    {{#if this.form}}
+                        <form>
+                            <label> Name:
+                                <input 
+                                    type="text" 
+                                    placeholder="{{this.form.nameCaption}}"
+                                />
+                            </label>
+                            <label> Purpose:
+                                <input 
+                                    type="text" 
+                                    placeholder="{{this.form.purposeCaption}}"
+                                />
+                            </label>
+                            <input 
+                                type="submit" 
+                                value="{{this.form.sendCaption}}" 
+                            />
+                            <input 
+                                type="button" 
+                                value="{{this.form.cancelCaption}}" 
+                            />
+                        </form>
+                    {{/if}}
+                    {{#if this.workEmail}}
+                        <p>Work Email: {{this.workEmail}}</p>
+                    {{/if}}
+                    {{#if this.generalEmail}}
+                        <p>Work Email: {{this.generalEmail}}</p>
+                    {{/if}}
+                    {{#if this.links}}
+                        {{#each this.links}}
+                            <p>
+                                {{#if this.Website}}
+                                    <a href="{{this.Website}}">Website</a>
+                                {{/if}} &nbsp;
+                                {{#if this.Facebook}}
+                                    <a href="{{this.Facebook}}">Facebook</a>
+                                {{/if}} &nbsp;
+                                {{#if this.Twitter}}
+                                    <a href="{{this.Twitter}}">Twitter</a>
+                                {{/if}} &nbsp;
+                                {{#if this.LinkedIn}}
+                                    <a href="{{this.LinkedIn}}">LinkedIn</a>
+                                {{/if}} &nbsp;
+                                {{#if this.YouTube}}
+                                    <a href="{{this.YouTube}}">YouTube</a>
+                                {{/if}} &nbsp;
+                                {{#if this.Instagram}}
+                                    <a href="{{this.Instagram}}">Instagram</a>
+                                {{/if}}
+                            </p>
+                        {{/each}}
+                    {{/if}}
+                </div>
+              {{/each}}  
+          </div>
+
+          <!-- about folder -->
+          <div id="about-folder">
+            {{#each this.about.list}}
+                <div class="about-card" id="{{this.slug}}">
+                    <h2>{{this.title}}</h2>
+                    {{#if this.thumbnail}}
+                        <img
+                            class="profile-image"
+                            src="{{this.thumbnail}}"
+                            alt="{{this.title}}"
+                        />
+                    {{/if}}
+                    {{#if this.objectives}}
+                        <p>{{this.objectives}}</p>
+                    {{/if}}
+                    {{#if this.website}}
+                        <p>{{this.website}}</p>
+                    {{/if}}
+                    {{#if this.currentRole}}
+                        <p>{{this.currentRole}}</p>
+                    {{/if}}
+                    {{#if this.almaMater}}
+                        <p>{{this.almaMater}}</p>
+                    {{/if}}
+                    {{#if this.languages}}
+                        <p>{{this.languages}}</p>
+                    {{/if}}
+                    {{#if this.roles}}
+                        {{#each this.roles}}
+                            <p>{{this.workplace}}</p>
+                            <p>{{this.type}}</p>
+                            <p>{{this.jobTitle}}</p>
+                            <p>{{this.year}}</p>
+                        {{/each}}
+                    {{/if}}
+                    {{#if this.skillSet}}
+                      <p>{{this.skillSet}}</p>
+                    {{/if}}
+                    {{#if this.schoolList}}
+                      {{#each this.schoolList}}
+                        <p>{{this.school}}</p>
+                        <p>{{this.degree}}</p>
+                        <p>{{this.subject}}</p>
+                        <p>{{this.year}}</p>
+                      {{/each}}
+                    {{/if}}
+                    {{#if this.image}}
+                      <img src="{{this.image}}" alt="{{this.title}}" /> 
+                    {{/if}}
+                    {{#if this.nominations}}
+                        <p>{{this.nominations}}</p>
+                    {{/if}}
+                    {{#if this.wins}}
+                      <p>{{this.wins}}</p>
+                    {{/if}}
+                    {{#if this.description}}
+                      <p>{{this.description}}</p>
+                    {{/if}}
+                    {{#if this.interests}}
+                      <p>{{this.interests}}</p>
+                    {{/if}}
+                </div>
+            {{/each}}
+          </div>
+        </section>
+
+        <!-- aside -->
+        <aside id="aside">
+          <div id="work-aside">
+            {{#if this.work.list}}
+                {{#each this.work.list}}
+                  <a
+                    id="{{this.slug}}-link"
+                    href="#{{this.slug}}"
+                    class="aside-link"
+                    onclick="handleWork(`{{this.slug}}`)"
+                  >
+                    {{this.title}}</a>
+                {{/each}}
+            {{/if}}
+          </div>  
+
+          <div id="about-aside">
+            {{#if this.about.list}}
+                {{#each this.about.list}}
+                  <a
+                    id="{{this.slug}}-link"
+                    href="#{{this.slug}}"
+                    class="aside-link"
+                    onclick="handleAbout(`{{this.slug}}`)"
+                  >
+                    {{this.title}}</a>
+                {{/each}}
+            {{/if}}
+          </div>
+
+          <div id="contact-aside">
+            {{#if this.contact.list}}
+                {{#each this.contact.list}}
+                  <a
+                    id="{{this.slug}}-link"
+                    href="#{{this.slug}}"
+                    class="aside-link"
+                    onclick="handleContact(`{{this.slug}}`)"
+                  >
+                    {{this.title}}</a>
+                {{/each}}
+            {{/if}}
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script>
+        const workFolder = document.getElementById("work-folder")
+        const contactFolder = document.getElementById("contact-folder")
+        const aboutFolder = document.getElementById("about-folder")
+        const homeFolder = document.getElementById("home-folder")
+
+        const aside = document.getElementById("aside")
+        const headerTitle = document.getElementById("header-title")
+
+        {{#if this.work.list}}
+          document.getElementById("{{this.work.list.[0].slug}}-link").setAttribute("class", "aside-link aside-active")
+        {{/if}}
+        {{#if this.contact.list}}
+          document.getElementById("{{this.contact.list.[0].slug}}-link").setAttribute("class", "aside-link aside-active")
+        {{/if}}
+        {{#if this.about.list}}
+          document.getElementById("{{this.about.list.[0].slug}}-link").setAttribute("class", "aside-link aside-active")
+        {{/if}}
+
+        const handleClick = (element) => {
+            homeFolder.style.display = "none";
+            workFolder.style.display = "none";
+            contactFolder.style.display = "none";
+            aboutFolder.style.display = "none";
+
+            const home = document.getElementById("home")
+            const work = document.getElementById("work")
+            const contact = document.getElementById("contact")
+            const about = document.getElementById("about")
+
+            if(element.id == "home") {
+                    homeFolder.style.display = "block";
+                    
+                    aside.style.display = "none"
+                    aside.setAttribute("class", "home-links")
+                    headerTitle.innerHTML = "{{this.home.headerTitle}}"
+
+                    element.setAttribute("class", "nav-link nav-active")
+                    work.setAttribute("class", "nav-link")
+                    about.setAttribute("class", "nav-link")
+                    contact.setAttribute("class", "nav-link")
+                }
+            else if(element.id == "work"){
+                    workFolder.style.display = "flex";
+
+                    aside.style.display = "block"
+                    document.getElementById("work-aside").style.display = "block"
+                    document.getElementById("about-aside").style.display = "none"
+                    document.getElementById("contact-aside").style.display = "none"
+
+                    headerTitle.innerHTML = "{{this.work.headerTitle}}"
+                    
+                    element.setAttribute("class", "nav-link nav-active")
+                    home.setAttribute("class", "nav-link")
+                    about.setAttribute("class", "nav-link")
+                    contact.setAttribute("class", "nav-link")
+                }
+            else if(element.id == "contact"){
+                    contactFolder.style.display = "flex";
+
+                    aside.style.display = "block"
+                    document.getElementById("contact-aside").style.display = "block"
+                    document.getElementById("work-aside").style.display = "none"
+                    document.getElementById("about-aside").style.display = "none"
+
+                    headerTitle.innerHTML = "{{contact.headerTitle}}"
+
+                    element.setAttribute("class", "nav-link nav-active")
+                    work.setAttribute("class", "nav-link")
+                    about.setAttribute("class", "nav-link")
+                    home.setAttribute("class", "nav-link")
+                }
+            else if(element.id == "about"){
+                    aboutFolder.style.display = "flex";
+
+                    aside.style.display = "block"
+                    document.getElementById("about-aside").style.display = "block"
+                    document.getElementById("contact-aside").style.display = "none"
+                    document.getElementById("work-aside").style.display = "none"
+
+                    headerTitle.innerHTML = "{{about.headerTitle}}"
+
+                    element.setAttribute("class", "nav-link nav-active")
+                    work.setAttribute("class", "nav-link")
+                    home.setAttribute("class", "nav-link")
+                    contact.setAttribute("class", "nav-link")
+                }
+        }
+
+
+        const handleWork = id => {
+            {{#if this.work.list}}
+              {{#each this.work.list}}
+                document.getElementById("{{this.slug}}").style.display = "none"
+                document.getElementById("{{this.slug}}-link").setAttribute("class", "aside-link")
+              {{/each}}
+            {{/if}}
+           
+            document.getElementById(id).style.display="block"
+            document.getElementById(`${id}-link`).setAttribute("class", "aside-link aside-active")
+        }
+
+        const handleAbout = id => {
+           {{#if this.about.list}}
+              {{#each this.about.list}}
+                document.getElementById("{{this.slug}}").style.display = "none"
+                document.getElementById("{{this.slug}}-link").setAttribute("class", "aside-link")
+              {{/each}}
+            {{/if}}
+
+            document.getElementById(id).style.display="block"
+            document.getElementById(`${id}-link`).setAttribute("class", "aside-link aside-active")
+        }
+
+        const handleContact = id => {
+            {{#if this.contact.list}}
+              {{#each this.contact.list}}
+                document.getElementById("{{this.slug}}").style.display = "none"
+                document.getElementById("{{this.slug}}-link").setAttribute("class", "aside-link")
+              {{/each}}
+            {{/if}}
+
+            document.getElementById(id).style.display="block"
+            document.getElementById(`${id}-link`).setAttribute("class", "aside-link aside-active")
+        }
+    </script>
+  </body>
+</html>

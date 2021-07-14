@@ -99,7 +99,6 @@ aside {
 
 #home-folder {
    height: 60vh;
-    background-image: url(../images/down.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-color: black;
@@ -133,7 +132,7 @@ aside {
     font-size: 1.5rem;
 }
 
-.work-card img {
+.work-card img, .about-card img {
     max-width: 10vw;
 }
 

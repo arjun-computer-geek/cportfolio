@@ -1,0 +1,24 @@
+{
+  "name": "cportfolio",
+  "version": "1.0.0",
+  "description": "Welcome to the codebase of cportfolio. it is intended to power career portfolio. We are so excited to have you. With your help we can build a great community which ensure usability, scalability, and stability of cportfolio.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js ./data/config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codanv/cportfolio.git"
+  },
+  "keywords": [],
+  "author": "https://github.com/Codanv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Codanv/cportfolio/issues"
+  },
+  "homepage": "https://github.com/Codanv/cportfolio#readme",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "handlebars": "^4.7.7"
+  }
+}
