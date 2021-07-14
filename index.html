@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A tenacious, passionate digital marketer and maker who loves turning bold ideas into impactful &amp; memorable experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>cportfolio - a website template for career portfolio</title>
+  </head>
+  <body>
+    <!-- lets start our endeavor -->
+    <div class="container">
+      <header>
+        <h1 id="header-title">Hello!</h1>
+        <nav>
+          <a
+            id="home"
+            onclick="handleClick(this)"
+            class="nav-link nav-active"
+            onclick="handleClick(this)"
+            href="#"
+          >Home</a>
+          <a
+            id="work"
+            onclick="handleClick(this)"
+            class="nav-link"
+            href="#"
+          >Work</a>
+          <a
+            id="contact"
+            onclick="handleClick(this)"
+            class="nav-link"
+            href="#"
+          >Contact</a>
+          <a
+            id="about"
+            onclick="handleClick(this)"
+            class="nav-link"
+            href="#"
+          >About</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="content">
+          
+          <!-- home folder -->
+          <div id="home-folder" style="background-image: url(public/images/down.jpg)">
+            <div class="home-text-wrapper">
+                <h2>I'm John Doe.</h2>
+
+                <p>A tenacious, passionate digital marketer and maker who loves turning bold ideas into impactful &amp; memorable experiences.</p>
+            </div>
+          </div>
+
+          <!-- work folder -->
+          <div id="work-folder">
+                <div class="work-card" id="xydus-game">
+                    <img src="public/images/profile.jpg" alt="Xydus Game" />
+                    <h2>Xydus Game</h2>
+                    <p>Xydus is multi-player game</p>
+                    <p>Node JS,MongoDB</p>
+                    <p>Overwhelmed while working</p>
+                        <p><a href="https://github.com/codanv/cportfolio.git">Repository</a></p>
+                        <p><a href="https://codanv.github.io/cportfolio">Demonstration</a></p>
+                </div>
+                <div class="work-card" id="xydus-music">
+                    <img src="public/images/profile.jpg" alt="Xydus Music" />
+                    <h2>Xydus Music</h2>
+                    <p>Xydus is online music streaming platform</p>
+                    <p>Node JS,MongoDB</p>
+                    <p>Satisfactory.</p>
+                        <p><a href="https://github.com/codanv/cportfolio.git">Repository</a></p>
+                        <p><a href="https://codanv.github.io/cportfolio">Demonstration</a></p>
+                </div>
+                <div class="work-card" id="xydus-poar">
+                    <img src="public/images/profile.jpg" alt="Xydus Poar" />
+                    <h2>Xydus Poar</h2>
+                    <p>Poar Algo is a crypto currency</p>
+                    <p>Blockchain</p>
+                    <p>It was tough for me.</p>
+                        <p><a href="https://github.com/codanv/cportfolio.git">Repository</a></p>
+                        <p><a href="https://codanv.github.io/cportfolio">Demonstration</a></p>
+                </div>
+          </div>
+
+          <!-- contact folder -->
+          <div id="contact-folder">
+                <div id="appointment" class="contact-card">
+                    <h2>Appointment</h2>
+                    <p>No offline meetings</p>
+                        <form>
+                            <label> Name:
+                                <input 
+                                    type="text" 
+                                    placeholder="Your Good name"
+                                />
+                            </label>
+                            <label> Purpose:
+                                <input 
+                                    type="text" 
+                                    placeholder="Purpose of meeting"
+                                />
+                            </label>
+                            <input 
+                                type="submit" 
+                                value="Request" 
+                            />
+                            <input 
+                                type="button" 
+                                value="Not Now" 
+                            />
+                        </form>
+                </div>
+                <div id="email-list" class="contact-card">
+                    <h2>Email List</h2>
+                    <p>contact if it makes sense or simply necessary</p>
+                        <p>Work Email: work@example.com</p>
+                        <p>Work Email: general@example.com</p>
+                </div>
+                <div id="social" class="contact-card">
+                    <h2>Social</h2>
+                    <p></p>
+                            <p>
+                                    <a href="https://example.com/">Website</a>
+                                 &nbsp;
+                                    <a href="https://facebook.com/">Facebook</a>
+                                 &nbsp;
+                                    <a href="https://facebook.com/">Twitter</a>
+                                 &nbsp;
+                                    <a href="https://facebook.com/">LinkedIn</a>
+                                 &nbsp;
+                                    <a href="https://facebook.com/">YouTube</a>
+                                 &nbsp;
+                                    <a href="https://facebook.com/">Instagram</a>
+                            </p>
+                </div>
+          </div>
+
+          <!-- about folder -->
+          <div id="about-folder">
+                <div class="about-card" id="profile">
+                    <h2>Profile</h2>
+                        <img
+                            class="profile-image"
+                            src="public/images/profile.jpg"
+                            alt="Profile"
+                        />
+                        <p>Experienced data science engineer relocating to San Francisco in August and seeking employment with a fast-growing startup. I bring more than 5 years experience doing data analysis and more than 7 years experience in database designer.</p>
+                        <p>https://example.com</p>
+                        <p>Freelancer</p>
+                        <p>Delhi University</p>
+                        <p>C, Java, JS, Python</p>
+                </div>
+                <div class="about-card" id="skill">
+                    <h2>Skill</h2>
+                      <p>Debugging, Testing</p>
+                </div>
+                <div class="about-card" id="experience">
+                    <h2>Experience</h2>
+                            <p>HZ inc. Hyderabad, India</p>
+                            <p>employee</p>
+                            <p>Full Stack Web Developer</p>
+                            <p>4</p>
+                            <p>UpWork. Online</p>
+                            <p>Freelancer</p>
+                            <p></p>
+                            <p>7</p>
+                            <p>SECRET</p>
+                            <p>Contract</p>
+                            <p></p>
+                            <p>5</p>
+                </div>
+                <div class="about-card" id="education">
+                    <h2>Education</h2>
+                        <p>Valley High School Maine</p>
+                        <p>grade 12</p>
+                        <p>Economics</p>
+                        <p>2010</p>
+                        <p>Delhi University</p>
+                        <p>Graduation</p>
+                        <p>Computer Science</p>
+                        <p>2014</p>
+                        <p>University of Alabama | Birmingham</p>
+                        <p>certification</p>
+                        <p>Certification in Grant Writing</p>
+                        <p>2015</p>
+                </div>
+                <div class="about-card" id="awards">
+                    <h2>Awards</h2>
+                      <img src="public/images/profile.jpg" alt="Awards" /> 
+                        <p>Award Z,Award ZZ</p>
+                      <p>Award Z</p>
+                </div>
+                <div class="about-card" id="bucket-list">
+                    <h2>Bucket List</h2>
+                      <img src="public/images/profile.jpg" alt="Bucket List" /> 
+                      <p>Not in specific order</p>
+                      <p>Tracking,Scuba Driving,Fly</p>
+                </div>
+          </div>
+        </section>
+
+        <!-- aside -->
+        <aside id="aside">
+          <div id="work-aside">
+                  <a
+                    id="xydus-game-link"
+                    href="#xydus-game"
+                    class="aside-link"
+                    onclick="handleWork(`xydus-game`)"
+                  >
+                    Xydus Game</a>
+                  <a
+                    id="xydus-music-link"
+                    href="#xydus-music"
+                    class="aside-link"
+                    onclick="handleWork(`xydus-music`)"
+                  >
+                    Xydus Music</a>
+                  <a
+                    id="xydus-poar-link"
+                    href="#xydus-poar"
+                    class="aside-link"
+                    onclick="handleWork(`xydus-poar`)"
+                  >
+                    Xydus Poar</a>
+          </div>  
+
+          <div id="about-aside">
+                  <a
+                    id="profile-link"
+                    href="#profile"
+                    class="aside-link"
+                    onclick="handleAbout(`profile`)"
+                  >
+                    Profile</a>
+                  <a
+                    id="skill-link"
+                    href="#skill"
+                    class="aside-link"
+                    onclick="handleAbout(`skill`)"
+                  >
+                    Skill</a>
+                  <a
+                    id="experience-link"
+                    href="#experience"
+                    class="aside-link"
+                    onclick="handleAbout(`experience`)"
+                  >
+                    Experience</a>
+                  <a
+                    id="education-link"
+                    href="#education"
+                    class="aside-link"
+                    onclick="handleAbout(`education`)"
+                  >
+                    Education</a>
+                  <a
+                    id="awards-link"
+                    href="#awards"
+                    class="aside-link"
+                    onclick="handleAbout(`awards`)"
+                  >
+                    Awards</a>
+                  <a
+                    id="bucket-list-link"
+                    href="#bucket-list"
+                    class="aside-link"
+                    onclick="handleAbout(`bucket-list`)"
+                  >
+                    Bucket List</a>
+          </div>
+
+          <div id="contact-aside">
+                  <a
+                    id="appointment-link"
+                    href="#appointment"
+                    class="aside-link"
+                    onclick="handleContact(`appointment`)"
+                  >
+                    Appointment</a>
+                  <a
+                    id="email-list-link"
+                    href="#email-list"
+                    class="aside-link"
+                    onclick="handleContact(`email-list`)"
+                  >
+                    Email List</a>
+                  <a
+                    id="social-link"
+                    href="#social"
+                    class="aside-link"
+                    onclick="handleContact(`social`)"
+                  >
+                    Social</a>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script>
+        const workFolder = document.getElementById("work-folder")
+        const contactFolder = document.getElementById("contact-folder")
+        const aboutFolder = document.getElementById("about-folder")
+        const homeFolder = document.getElementById("home-folder")
+
+        const aside = document.getElementById("aside")
+        const headerTitle = document.getElementById("header-title")
+
+          document.getElementById("xydus-game-link").setAttribute("class", "aside-link aside-active")
+          document.getElementById("appointment-link").setAttribute("class", "aside-link aside-active")
+          document.getElementById("profile-link").setAttribute("class", "aside-link aside-active")
+
+        const handleClick = (element) => {
+            homeFolder.style.display = "none";
+            workFolder.style.display = "none";
+            contactFolder.style.display = "none";
+            aboutFolder.style.display = "none";
+
+            const home = document.getElementById("home")
+            const work = document.getElementById("work")
+            const contact = document.getElementById("contact")
+            const about = document.getElementById("about")
+
+            if(element.id == "home") {
+                    homeFolder.style.display = "block";
+                    
+                    aside.style.display = "none"
+                    aside.setAttribute("class", "home-links")
+                    headerTitle.innerHTML = "Welcome"
+
+                    element.setAttribute("class", "nav-link nav-active")
+                    work.setAttribute("class", "nav-link")
+                    about.setAttribute("class", "nav-link")
+                    contact.setAttribute("class", "nav-link")
+                }
+            else if(element.id == "work"){
+                    workFolder.style.display = "flex";
+
+                    aside.style.display = "block"
+                    document.getElementById("work-aside").style.display = "block"
+                    document.getElementById("about-aside").style.display = "none"
+                    document.getElementById("contact-aside").style.display = "none"
+
+                    headerTitle.innerHTML = "Work"
+                    
+                    element.setAttribute("class", "nav-link nav-active")
+                    home.setAttribute("class", "nav-link")
+                    about.setAttribute("class", "nav-link")
+                    contact.setAttribute("class", "nav-link")
+                }
+            else if(element.id == "contact"){
+                    contactFolder.style.display = "flex";
+
+                    aside.style.display = "block"
+                    document.getElementById("contact-aside").style.display = "block"
+                    document.getElementById("work-aside").style.display = "none"
+                    document.getElementById("about-aside").style.display = "none"
+
+                    headerTitle.innerHTML = "Contact"
+
+                    element.setAttribute("class", "nav-link nav-active")
+                    work.setAttribute("class", "nav-link")
+                    about.setAttribute("class", "nav-link")
+                    home.setAttribute("class", "nav-link")
+                }
+            else if(element.id == "about"){
+                    aboutFolder.style.display = "flex";
+
+                    aside.style.display = "block"
+                    document.getElementById("about-aside").style.display = "block"
+                    document.getElementById("contact-aside").style.display = "none"
+                    document.getElementById("work-aside").style.display = "none"
+
+                    headerTitle.innerHTML = "About"
+
+                    element.setAttribute("class", "nav-link nav-active")
+                    work.setAttribute("class", "nav-link")
+                    home.setAttribute("class", "nav-link")
+                    contact.setAttribute("class", "nav-link")
+                }
+        }
+
+
+        const handleWork = id => {
+                document.getElementById("xydus-game").style.display = "none"
+                document.getElementById("xydus-game-link").setAttribute("class", "aside-link")
+                document.getElementById("xydus-music").style.display = "none"
+                document.getElementById("xydus-music-link").setAttribute("class", "aside-link")
+                document.getElementById("xydus-poar").style.display = "none"
+                document.getElementById("xydus-poar-link").setAttribute("class", "aside-link")
+           
+            document.getElementById(id).style.display="block"
+            document.getElementById(`${id}-link`).setAttribute("class", "aside-link aside-active")
+        }
+
+        const handleAbout = id => {
+                document.getElementById("profile").style.display = "none"
+                document.getElementById("profile-link").setAttribute("class", "aside-link")
+                document.getElementById("skill").style.display = "none"
+                document.getElementById("skill-link").setAttribute("class", "aside-link")
+                document.getElementById("experience").style.display = "none"
+                document.getElementById("experience-link").setAttribute("class", "aside-link")
+                document.getElementById("education").style.display = "none"
+                document.getElementById("education-link").setAttribute("class", "aside-link")
+                document.getElementById("awards").style.display = "none"
+                document.getElementById("awards-link").setAttribute("class", "aside-link")
+                document.getElementById("bucket-list").style.display = "none"
+                document.getElementById("bucket-list-link").setAttribute("class", "aside-link")
+
+            document.getElementById(id).style.display="block"
+            document.getElementById(`${id}-link`).setAttribute("class", "aside-link aside-active")
+        }
+
+        const handleContact = id => {
+                document.getElementById("appointment").style.display = "none"
+                document.getElementById("appointment-link").setAttribute("class", "aside-link")
+                document.getElementById("email-list").style.display = "none"
+                document.getElementById("email-list-link").setAttribute("class", "aside-link")
+                document.getElementById("social").style.display = "none"
+                document.getElementById("social-link").setAttribute("class", "aside-link")
+
+            document.getElementById(id).style.display="block"
+            document.getElementById(`${id}-link`).setAttribute("class", "aside-link aside-active")
+        }
+    </script>
+  </body>
+</html>
