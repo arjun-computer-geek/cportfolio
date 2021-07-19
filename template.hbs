@@ -56,12 +56,14 @@
         <section class="content">
           
           <!-- home folder -->
-          <div id="home-folder" style="background-image: url({{#if  this.home.image}}{{this.home.image}}{{/if}})">
+          <div id="home-folder" style="background-image: url({{#if  this.home.backgroundImage}}{{this.home.backgroundImage}}{{/if}})">
             <div class="home-text-wrapper">
+              {{#if this.name}}
+                <img class="home-profile-image" src="{{this.home.profileImage}}" alt="{{this.name}}"/>
+              {{/if}}
               {{#if this.name}}
                 <h2>I'm {{this.name}}.</h2>
               {{/if}}
-
               {{#if this.home.philosophy}}
                 <p>{{this.home.philosophy}}</p>
               {{/if}}

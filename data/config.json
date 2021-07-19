@@ -3,7 +3,8 @@
     "name": "John Doe",
     "home": {
         "headerTitle": "Welcome",
-        "image": "public/images/down.jpg",
+        "backgroundImage": "public/images/down.jpg",
+        "profileImage": "public/images/profile.png",
         "philosophy": "A tenacious, passionate digital marketer and maker who loves turning bold ideas into impactful & memorable experiences."
     },
     "work": {
